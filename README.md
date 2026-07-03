@@ -1,6 +1,6 @@
-# WayPy
+# waypy-routing
 
-WayPy is a small Python package for finding paths in directed graphs. It includes
+waypy-routing is a small Python package for finding paths in directed graphs. It includes
 classic unweighted and weighted search algorithms behind a simple object-oriented
 API.
 
@@ -19,7 +19,7 @@ API.
 ## Installation
 
 ```bash
-pip install WayPy
+pip install waypy-routing
 ```
 
 ## Quick Start
@@ -125,4 +125,4 @@ python -m twine upload dist/*
 
 ## License
 
-WayPy is distributed under the MIT License.
+waypy-routing is distributed under the MIT License.
