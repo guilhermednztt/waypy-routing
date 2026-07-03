@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "WayPy"
+version = "0.2.0"
+description = "Graph search algorithms with a small object-oriented Python API."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  { name = "Guilherme Donizetti" },
+  { name = "Luiz Fernando Rodrigues" }
+]
+keywords = ["graph", "search", "pathfinding", "a-star", "dijkstra"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.4"]
+
+[project.urls]
+Homepage = "https://github.com/guilhermedonizetti/WayPy"
+Source = "https://github.com/guilhermedonizetti/WayPy"
+Issues = "https://github.com/guilhermedonizetti/WayPy/issues"
+
+[tool.setuptools.packages.find]
+include = ["waypy*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
